@@ -4,8 +4,11 @@
   box-sizing: border-box;
 }
 
+body {
+  width: 100%
+}
 .Body-content {
-  min-width: 100%;
+  width: 100%;
   align-items: center;
 }
 
@@ -80,6 +83,10 @@
   margin-left: 330px;
 }
 
+.date {
+  margin-left: 330px;
+}
+
 .main {
   width: 100%;
   align-items: center;
@@ -88,8 +95,8 @@
 .editors-pick {
   position: absolute;
   padding-left: 0;
-  width: 210px;
-  height: auto;
+  width: 220px;
+  height: 70px;
   float: right;
   margin-left: 1000px;
   margin-top: 900px;
@@ -108,10 +115,10 @@
 
 .editors-pick a {
   padding-top: 5px;
-  margin-right: 15px;
+  margin-right: 10px;
   display: block;
-  width: 210px;
-  height: 80px;
+  width: 200px;
+  height: 90px;
   font-size: 15px;
   color: #000;
   text-decoration: none;
@@ -352,18 +359,20 @@ p {
   margin: 10px 0;
 }
 
+/* Here is the styling of the commented section in my html */
 .suggested {
-  max-width: 942px;
+  width: 100%;
   grid-area: first;
   border-top: 1px solid #000;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  box-sizing: border-box;
 }
 
 .suggested-title {
   margin: 5px;
-  width: 942px;
+  width: 850px;
   display: flex;
 }
 
@@ -385,10 +394,10 @@ p {
 }
 
 .suggested-option {
-  width: 300px;
+  width: 280px;
   height: 250px;
-  border: 1px solid #ccc;
-  margin: 5px;
+  border: 2px solid #ccc;
+  margin: 3px;
   display: grid;
   grid-template-columns: 82px auto 150px;
   grid-template-rows: 82px 15px auto auto auto;
@@ -445,11 +454,11 @@ p {
 .most-popular {
   margin: 5px;
   margin-top: 0;
-  max-width: 313px;
-  grid-area: second;
+  width: 290px;
   border-top: 1px solid #000;
   display: flex;
   flex-wrap: wrap;
+  box-sizing: border-box;
 }
 
 .most-popular h4 {
@@ -478,20 +487,21 @@ p {
 }
 
 .more {
-  width: 942px;
+  width: 100%;
   grid-area: third;
   border-top: 1px solid #000;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  box-sizing: border-box;
 }
 
 .more h4 {
-  width: 942px;
+  width: 100%;
 }
 
 .more-child {
-  width: 313px;
+  width: 310px;
   max-height: 305px;
   display: flex;
   flex-wrap: wrap;
